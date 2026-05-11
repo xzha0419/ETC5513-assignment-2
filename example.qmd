@@ -5,3 +5,10 @@ author: xuanning zhang
 ---
 this is main
 test
+
+```{r}
+library(ggplot2)
+penguins |> 
+    ggplot(aes(x=species, y=bill_dep))+
+    geom_col()
+```
